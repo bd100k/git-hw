@@ -89,20 +89,7 @@ networks:
 Обеспечьте внешний доступ к порту 9091 c докер-сервера.
 
 ```
-  GNU nano 7.2                                      compose.yml                                               
-services:
-  prometheus:
-    image: prom/prometheus
-    container_name: SabitovYM-netology-prometheus
-    command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
-    ports:
-      - 9090:9090
-    volumes:
-      - ./:/etc/prometheus
-      - prometheus-data:/prometheus
-    networks:
-      - SabitovYM-netology-hw
-    restart: always
+
   pushgateway:
     image: prom/pushgateway
     container_name: SabitovYM-netology-pushgateway
@@ -114,15 +101,6 @@ services:
       - prometheus
     restart: unless-stopped
 
-volumes:
-  prometheus-data:
-networks:
-  SabitovYM-netology-hw:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 10.5.0.0/16
-          gateway: 10.5.0.1
 
 ```
 ![image](https://github.com/user-attachments/assets/805782d4-51e7-44f5-a6fc-91f2c492a1f9)
