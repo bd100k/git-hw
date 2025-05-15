@@ -77,6 +77,7 @@ networks:
           gateway: 10.5.0.1
 
 ```
+#####Скриншот к Заданию 3
 ![Скриншот к Заданию 3](https://github.com/user-attachments/assets/a5827ee8-0c1f-4072-9b15-8cac09486362)
 
 ---
@@ -103,6 +104,7 @@ networks:
 
 
 ```
+##### Скриншот к Заданию 4
 ![Скриншот к Заданию 4](https://github.com/user-attachments/assets/805782d4-51e7-44f5-a6fc-91f2c492a1f9)
 
 ---
@@ -133,7 +135,7 @@ networks:
     restart: unless-stopped
 
 ```
-
+##### Скриншот к Заданию 5
 ![Скриншот к Заданию 5](https://github.com/user-attachments/assets/815ed922-9923-40f4-b365-0c19cdf26920)
 
 ---
@@ -168,6 +170,7 @@ services:
       - pushgateway
     restart: unless-stopped
 ```
+##### Скриншот к Заданию 6
 ![Скриншот к Заданию 6](https://github.com/user-attachments/assets/174bf802-b7a5-4448-98be-adcb233d738c)
 
 ---
@@ -185,5 +188,8 @@ docker-compose.yml целиком;
 скриншот команды docker ps после запуске docker-compose.yml;
 скриншот графика, постоенного на основе вашей метрики.
 
-![скриншот команды docker ps после запуске docker-compose.yml](https://github.com/user-attachments/assets/b7b2cb58-1c3f-44d5-9652-f17cd0c61f60)
 ##### скриншот команды docker ps после запуске docker-compose.yml
+![скриншот команды docker ps после запуске docker-compose.yml](https://github.com/user-attachments/assets/b7b2cb58-1c3f-44d5-9652-f17cd0c61f60)
+
+##### скриншот графика, постоенного на основе метрики
+
