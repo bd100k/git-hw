@@ -146,6 +146,26 @@ networks:
 Настройте использование контейнерами одной сети.
 Запустите сценарий в detached режиме.
 
-```yaml
+```yaml                                  
+services:
+  prometheus:
+    container_name: SabitovYM-netology-prometheus
+    networks:
+      - SabitovYM-netology-hw
+    restart: always
+  pushgateway:
+    container_name: SabitovYM-netology-pushgateway
+    networks:
+      - SabitovYM-netology-hw
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+  grafana:
+    container_name: SabitovYM-netology-grafana
+    networks:
+      - SabitovYM-netology-hw
+    depends_on:
+      - pushgateway
+    restart: unless-stopped
 
 ```
