@@ -167,5 +167,5 @@ services:
     depends_on:
       - pushgateway
     restart: unless-stopped
-
 ```
+![image](https://github.com/user-attachments/assets/174bf802-b7a5-4448-98be-adcb233d738c)
