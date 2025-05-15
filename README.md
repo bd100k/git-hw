@@ -40,6 +40,30 @@ networks:
           gateway: 10.5.0.1
 
 ```
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: SabitovYuM-netology-prometheus
+    command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prometheus-data:/prometheus
+    networks:
+      - SabitovYM-my-netology-hw
+
+volumes:
+  prometheus-data:
+
+networks:
+    SabitovYM-my-netology-hw:
+     driver: bridge
+     ipam:
+      config:
+       - subnet: 10.5.0.0/16
+         gateway: 10.5.0.1
 
 ---
 
