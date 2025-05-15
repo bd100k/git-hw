@@ -186,3 +186,4 @@ docker-compose.yml целиком;
 скриншот графика, постоенного на основе вашей метрики.
 
 ![скриншот команды docker ps после запуске docker-compose.yml](https://github.com/user-attachments/assets/b7b2cb58-1c3f-44d5-9652-f17cd0c61f60)
+№скриншот команды docker ps после запуске docker-compose.yml
