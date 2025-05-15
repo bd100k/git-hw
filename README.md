@@ -77,7 +77,7 @@ networks:
           gateway: 10.5.0.1
 
 ```
-![image](https://github.com/user-attachments/assets/a5827ee8-0c1f-4072-9b15-8cac09486362)
+![Скриншот к Заданию 3](https://github.com/user-attachments/assets/a5827ee8-0c1f-4072-9b15-8cac09486362)
 
 ---
 
@@ -103,7 +103,7 @@ networks:
 
 
 ```
-![image](https://github.com/user-attachments/assets/805782d4-51e7-44f5-a6fc-91f2c492a1f9)
+![Скриншот к Заданию 4](https://github.com/user-attachments/assets/805782d4-51e7-44f5-a6fc-91f2c492a1f9)
 
 ---
 
@@ -134,7 +134,7 @@ networks:
 
 ```
 
-![image](https://github.com/user-attachments/assets/815ed922-9923-40f4-b365-0c19cdf26920)
+![Скриншот к Заданию 5](https://github.com/user-attachments/assets/815ed922-9923-40f4-b365-0c19cdf26920)
 
 ---
 
@@ -168,7 +168,7 @@ services:
       - pushgateway
     restart: unless-stopped
 ```
-![image](https://github.com/user-attachments/assets/174bf802-b7a5-4448-98be-adcb233d738c)
+![Скриншот к Заданию 6](https://github.com/user-attachments/assets/174bf802-b7a5-4448-98be-adcb233d738c)
 
 ---
 
