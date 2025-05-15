@@ -1,0 +1,35 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: SabitovYM-netology-prometheus
+    command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    volumes:
+      - ./:/etc/prometheus
+      - prometheus-data:/prometheus
+    networks:
+      - SabitovYM-netology-hw
+    restart: always
+  pushgateway:
+    image: prom/pushgateway
+    container_name: SabitovYM-netology-pushgateway
+    ports:
+      - 9091:9091
+    networks:
+      - SabitovYM-netology-hw
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+  grafana:
+    image: grafana/grafana
+    container_name: SabitovYM-netology-grafana
+    environment:
+     GF_PATHS_CONFIG: /etc/grafana/custom.ini
+    ports:
+      - 80:3000
+    volumes:
+      - ./grafana:/etc/grafana
+      - grafana-data:/var/lib/grafana
+    networks:
+      - SabitovYM-netology-hw
