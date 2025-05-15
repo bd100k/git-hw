@@ -64,8 +64,10 @@ services:
     networks:
       - SabitovYM-netology-hw
     restart: always
+
 volumes:
   prometheus-data:
+
 networks:
   SabitovYM-netology-hw:
     driver: bridge
