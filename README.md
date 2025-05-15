@@ -105,3 +105,38 @@ networks:
 ```
 ![image](https://github.com/user-attachments/assets/805782d4-51e7-44f5-a6fc-91f2c492a1f9)
 
+---
+
+### Задание 5
+Выполните действия:
+
+Создайте конфигурацию docker-compose для Grafana с именем контейнера <ваши фамилия и инициалы>-netology-grafana.
+Добавьте необходимые тома с данными и конфигурацией (конфигурация лежит в репозитории в директории 6-04/grafana.
+Добавьте переменную окружения с путем до файла с кастомными настройками (должен быть в томе), в самом файле пропишите логин=<ваши фамилия и инициалы> пароль=netology.
+Обеспечьте внешний доступ к порту 3000 c порта 80 докер-сервера.
+
+```
+  grafana:
+    image: grafana/grafana
+    container_name: SabitovYM-netology-grafana
+    environment:
+     GF_PATHS_CONFIG: /etc/grafana/custom.ini
+    ports:
+      - 80:3000
+    volumes:
+      - ./grafana:/etc/grafana
+      - grafana-data:/var/lib/grafana
+    networks:
+      - SabitovYM-netology-hw
+    depends_on:
+      - pushgateway
+    restart: unless-stopped
+
+```
+
+![image](https://github.com/user-attachments/assets/815ed922-9923-40f4-b365-0c19cdf26920)
+
+---
+
+
+
