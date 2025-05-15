@@ -192,6 +192,7 @@ docker-compose.yml целиком;
 ![скриншот команды docker ps после запуске docker-compose.yml](https://github.com/user-attachments/assets/b7b2cb58-1c3f-44d5-9652-f17cd0c61f60)
 
 ##### скриншот графика, постоенного на основе метрики
+![скриншот графика, постоенного на основе метрики](https://github.com/user-attachments/assets/c0d291be-9c57-459a-beb2-687a843de022)
 
 ---
 
