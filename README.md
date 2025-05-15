@@ -187,7 +187,9 @@ Cоздайте Data Source Prometheus (Home -> Connections -> Data sources -> A
 docker-compose.yml целиком;
 скриншот команды docker ps после запуске docker-compose.yml;
 скриншот графика, постоенного на основе вашей метрики.
-
+```yaml
+echo "SabitovYM 5" | curl --data-binary @- http://localhost:9091/metrics/job/netology
+```
 ##### скриншот команды docker ps после запуске docker-compose.yml
 ![скриншот команды docker ps после запуске docker-compose.yml](https://github.com/user-attachments/assets/b7b2cb58-1c3f-44d5-9652-f17cd0c61f60)
 
