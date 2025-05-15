@@ -77,6 +77,7 @@ networks:
           gateway: 10.5.0.1
 
 ```
+![image](https://github.com/user-attachments/assets/a5827ee8-0c1f-4072-9b15-8cac09486362)
 
 ---
 
