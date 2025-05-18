@@ -97,7 +97,13 @@ spec:
    - удаления контейнера;
    - проброса порта локальной машины в контейнер для отладки.
 2. В качестве решения пришлите получившиеся команды.
-```
+![Скриншот к заданию 3](https://github.com/user-attachments/assets/fd197db3-d724-4ab6-ae5d-89c3653d7773)
+
+```yaml
+kubectl exec redis-54457d549d-2qqsj -- ps aux
+kubectl logs --since=25m redis-54457d549d-2qqsj
+kubectl delete -f redis.yaml && kubectl delete -f redis-service.yaml
+kubectl port-forward redis-54457d549d-2qqsj 1055:6739
 ```
 ---
 ### Задание 4*
