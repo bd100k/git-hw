@@ -5,7 +5,7 @@
 Добейтесь стабильной работы всех системных контейнеров.
 В качестве ответа пришлите скриншот результата выполнения команды kubectl get po -n kube-system.
 
-![Скриншот к заданию 1](https://github.com/user-attachments/assets/f9349208-28f3-43b4-986c-58618033dde9)
+![Скриншот к заданию 1](https://github.com/user-attachments/assets/9ac3e56e-0190-48f5-a136-cd91254ce779)
 
 ---
 
