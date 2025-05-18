@@ -12,7 +12,7 @@
 ### Задание 2
 Есть файл с деплоем:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -46,7 +46,7 @@ spec:
 2. Запустите Deployment в своём кластере и добейтесь его стабильной работы.
 3. В качестве решения пришлите получившийся файл.
 
-```
+```yaml
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -71,7 +71,7 @@ spec:
         ports:
         - containerPort: 6379
 ```
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
