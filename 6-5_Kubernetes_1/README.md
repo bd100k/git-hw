@@ -104,20 +104,3 @@ kubectl delete -f redis.yaml && kubectl delete -f redis-service.yaml
 kubectl port-forward redis-54457d549d-2qqsj 1055:6739
 ```
 ---
-### Задание 4*
-Есть конфигурация nginx:
-```
-location / {
-    add_header Content-Type text/plain;
-    return 200 'Hello from k8s';
-}
-```
-#### Выполните действия:
-
-1. Напишите yaml-файлы для развёртки nginx, в которых будут присутствовать:
-   - ConfigMap с конфигом nginx;
-   - Deployment, который бы подключал этот configmap;
-   - Ingress, который будет направлять запросы по префиксу /test на наш сервис.
-```
-```
----
