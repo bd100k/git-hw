@@ -5,7 +5,7 @@
 2. Установите любой понравившийся CNI плагин.
 3. Добейтесь стабильной работы кластера.
 
-![Скриншот к заданию 1](https://github.com/user-attachments/assets/d06d63ac-25ec-47a2-9f04-a0e29577fe8f)
+![Скриншот к заданию 1](https://github.com/user-attachments/assets/ef505f51-5e30-4164-aa51-2800f45ef1a2)
 
 ---
 
