@@ -1,0 +1,43 @@
+### Задание 1
+#### Выполните действия:
+
+Создайте свой кластер с помощью kubeadm.
+Установите любой понравившийся CNI плагин.
+Добейтесь стабильной работы кластера.
+
+---
+
+### Задание 2
+Есть файл с деплоем:
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: master
+        image: bitnami/redis
+        env:
+         - name: REDIS_PASSWORD
+           value: password123
+        ports:
+        - containerPort: 6379
+```
+#### Выполните действия:
+
+1. Создайте Helm Charts.
+2. Добавьте в него сервис.
+3. Вынесите все нужные, на ваш взгляд, параметры в values.yaml.
+4. Запустите чарт в своём кластере и добейтесь его стабильной работы.
+5. ---
